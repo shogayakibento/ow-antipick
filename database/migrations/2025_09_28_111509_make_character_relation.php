@@ -11,7 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('character_relations', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('character_id')->constrained('characters')->cascadeOnDelete();
+            $table->unsignedBigInteger('to_hero_id');
+            $table->foreign('to_hero_id')->references('id')->on('characters')->cascadeOnDelete();
+            $table->integer('score');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('character_relations');
     }
 };
