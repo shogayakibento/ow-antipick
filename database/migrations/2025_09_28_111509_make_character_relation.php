@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('to_hero_id');
             $table->foreign('to_hero_id')->references('id')->on('characters')->cascadeOnDelete();
             $table->integer('score');
+            $table->unique(['character_id', 'to_hero_id']);
             $table->timestamps();
         });
     }
