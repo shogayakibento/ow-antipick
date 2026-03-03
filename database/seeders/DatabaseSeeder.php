@@ -75,13 +75,13 @@ class DatabaseSeeder extends Seeder
             ['name' => 'ハザード',             'role' => 'タンク',   'image_url' => 'https://d15f34w2p8l1cc.cloudfront.net/overwatch/612ae1e6d28125bd4d4d18c2c4e5b004936c094556239ed24a1c0a806410a020.png'],
             ['name' => 'フレイヤ',             'role' => 'ダメージ', 'image_url' => 'https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d1a515607b70f87fd391d0478fb4d706e31a7aebfbcb0edd2cfce04efad256c.png'],
             ['name' => 'ジュノ',              'role' => 'サポート', 'image_url' => 'https://d15f34w2p8l1cc.cloudfront.net/overwatch/585b2d60cbd3c271b6ad5ad0922537af0c6836fab6c89cb9979077f7bb0832b5.png'],
-            ['name' => 'ドミナ',              'role' => 'タンク',   'image_url' => ''], // 仮URL未定
-            ['name' => 'ミズキ',              'role' => 'ダメージ', 'image_url' => ''], // 仮URL未定
+            ['name' => 'ドミナ',              'role' => 'タンク',   'image_url' => 'https://d1u1mce87gyfbn.cloudfront.net/hero/domina/portrait.png'],
+            ['name' => 'ミズキ',              'role' => 'サポート', 'image_url' => 'https://d1u1mce87gyfbn.cloudfront.net/hero/mizuki/portrait.png'],
             // 追加キャラ (id: 47-50)
-            ['name' => 'アンラン',             'role' => 'ダメージ', 'image_url' => ''],
-            ['name' => 'エムレ',               'role' => 'ダメージ', 'image_url' => ''],
-            ['name' => 'ジェットパックキャット', 'role' => 'サポート', 'image_url' => ''],
-            ['name' => 'ヴェンデッタ',          'role' => 'ダメージ', 'image_url' => ''],
+            ['name' => 'アンラン',             'role' => 'ダメージ', 'image_url' => 'https://d1u1mce87gyfbn.cloudfront.net/hero/anran/portrait.png'],
+            ['name' => 'エムレ',               'role' => 'ダメージ', 'image_url' => 'https://d1u1mce87gyfbn.cloudfront.net/hero/emre/portrait.png'],
+            ['name' => 'ジェットパックキャット', 'role' => 'サポート', 'image_url' => 'https://d1u1mce87gyfbn.cloudfront.net/hero/jetpack_cat/portrait.png'],
+            ['name' => 'ヴェンデッタ',          'role' => 'ダメージ', 'image_url' => 'https://d1u1mce87gyfbn.cloudfront.net/hero/vendetta/portrait.png'],
         ];
 
         DB::table('characters')->insert($characters);
@@ -535,6 +535,9 @@ class DatabaseSeeder extends Seeder
             [47,34,1,'機動力がなく貫通ショットの回避が困難'],
             [47,37,1,'バックラインに潜り込み機動力の低いマーシーを狙い撃ちできる'],
             [47,39,1,'ゾーン制圧でライフウィーバーを動かしにくい状況に追い込める'],
+            [47,6,1,'ゾーン制圧アビリティで近距離依存のジャンカー・クイーンを追い詰められる'],
+            [47,10,1,'火系ダメージでネメシスフォームにも有効'],
+            [47,36,1,'射程外から火系投射物で近距離依存のブリギッテを封じられる'],
             // エムレ (48)
             [48,8,1,'Siphon Blasterで自己回復のマウガを上回るダメージを出せる'],
             [48,9,1,'壁バウンスグレネードでシールドを回避してダメージを与えられる'],
@@ -542,12 +545,17 @@ class DatabaseSeeder extends Seeder
             [48,34,2,'バーストで即座に溶かせる低HPのゼニヤッタに特に強い'],
             [48,35,1,'バーストダメージでイモータリティフィールド発動前に倒しやすい'],
             [48,37,1,'バックラインのマーシーをバーストで素早く処理できる'],
+            [48,3,1,'Siphon Blasterの継続火力でオリーサを削り続けられる'],
+            [48,33,1,'バーストで鈴の無敵が切れた瞬間に溶かせる'],
             // ジェットパックキャット (49)
             [49,5,1,'飛行でグラビトンサージの範囲を避けやすい'],
             [49,9,1,'飛行で高所から攻撃しラインハルトの地上シールドを無効化できる'],
             [49,12,1,'高い飛行高度ではフックの射程が届きにくい'],
             [49,19,1,'飛行で地雷やトラップを回避しジャンクラットの設置物を無視できる'],
             [49,26,1,'上空からバスティオンのアサルト形態の射角外から攻撃できる'],
+            [49,7,1,'飛行でドゥームフィストの突進射程外を維持できる'],
+            [49,6,1,'飛行で近距離依存のジャンカー・クイーンのランペイジを封じられる'],
+            [49,36,1,'飛行でブリギッテのフレイル射程外から攻撃できる'],
             // ヴェンデッタ (50)
             [50,21,1,'近接戦ではソルジャーの射撃が不利になり制圧しやすい'],
             [50,26,1,'透明化でバスティオンのアサルト形態に近接し確実にダメージを与えられる'],
@@ -557,6 +565,8 @@ class DatabaseSeeder extends Seeder
             [50,35,1,'バックラインに侵入しバティストを近接で制圧できる'],
             [50,37,1,'透明化でバックラインに侵入しマーシーを暗殺できる'],
             [50,39,1,'高速移動でバックラインのライフウィーバーを素早く狙える'],
+            [50,24,1,'透明化でブリンクを読まれにくくトレーサーのカウンターを封じられる'],
+            [50,17,1,'透明化で接近しゲンジのデフレクトを読んだ近接攻撃で制圧できる'],
         ];
 
         $formatted = array_map(fn($r) => [
