@@ -228,12 +228,83 @@ h1 {
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    width: auto;
-    height: 130px;
+    width: 130px;
+    height: auto;
+    padding-bottom: 8px;
 }
 .chosen-character-card img {
     max-width: 100px;
     margin-bottom: 3px;
+}
+
+/* 理由トグルボタン */
+.reason-toggle-btn {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: bold;
+    background: #e8f4fd;
+    color: #1a6da3;
+    border: 1px solid #a0c8e8;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+.reason-toggle-btn:hover {
+    background: #c8e6f8;
+}
+
+/* 理由パネル */
+.reason-panel {
+    margin: 6px 8px 2px;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+/* 理由リスト */
+.reason-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.reason-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border-left: 3px solid #ccc;
+    background: #f9f9f9;
+}
+.reason-item.strong-counter {
+    border-left-color: #e6ac00;
+    background: #fffbe6;
+}
+.reason-item.counter {
+    border-left-color: #43a047;
+    background: #f1f8f1;
+}
+
+.counter-icon {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.reason-opponent {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #555;
+}
+.reason-text {
+    font-size: 0.78rem;
+    color: #333;
+    font-weight: normal;
+    line-height: 1.4;
 }
 
 .rank-header {
