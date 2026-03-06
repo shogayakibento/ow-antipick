@@ -1,4 +1,6 @@
-@extends('layouts.app') @section('title','アンチピック結果')
+@extends('layouts.app')
+@section('title','アンチピック結果 | OW2 アンチピックチェッカー')
+@section('description','選択した敵チームに対して相性スコアが高いキャラクターをランキング形式で表示しています。オーバーウォッチ2のカウンターピック選びに活用してください。')
 @section('content')
 <div style="padding: 0 4px;">
 

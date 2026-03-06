@@ -1,4 +1,21 @@
-@extends('layouts.app') @section('title','【オーバーウォッチ2】 アンチピックチェッカー')
+@extends('layouts.app')
+@section('title','【オーバーウォッチ2】 アンチピックチェッカー')
+@section('description','オーバーウォッチ2の敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。タンク・ダメージ・サポート全キャラ対応。')
+@section('jsonld')
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OW2 アンチピックチェッカー",
+    "description": "オーバーウォッチ2の敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。",
+    "url": "{{ url('/') }}",
+    "applicationCategory": "GameApplication",
+    "inLanguage": "ja",
+    "isAccessibleForFree": true,
+    "operatingSystem": "Web"
+}
+</script>
+@endsection
 @section('content')
 <div style="
     text-align: center;

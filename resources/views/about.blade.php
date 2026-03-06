@@ -1,4 +1,6 @@
-@extends('layouts.app') @section('title','このサイトについて')
+@extends('layouts.app')
+@section('title','このサイトについて | OW2 アンチピックチェッカー')
+@section('description','OW2 アンチピックチェッカーは、オーバーウォッチ2の敵チームキャラクターを選ぶだけで最適なカウンターキャラを提案するファンツールです。')
 @section('content')
 <div style="padding: 0 4px;">
 

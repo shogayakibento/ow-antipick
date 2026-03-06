@@ -1,4 +1,6 @@
-@extends('layouts.app') @section('title','キャラ、ロール選択')
+@extends('layouts.app')
+@section('title','【OW2】アンチピック診断 - 敵キャラを選択')
+@section('description','あなたのロールと敵チームのキャラクターを選ぶだけ！相性データをもとにオーバーウォッチ2の最適なアンチピックを提案します。')
 @section('content')
 <div style="padding: 0 4px; padding-bottom: 80px;">
 

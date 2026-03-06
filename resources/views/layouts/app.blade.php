@@ -1,19 +1,21 @@
-<html>
+<html lang="ja">
     <head>
         <title>@yield('title')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="オーバーウォッチ2の敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。">
+        <meta name="description" content="@yield('description', 'オーバーウォッチ2の敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。')">
+        <link rel="canonical" href="{{ url()->current() }}">
         <!-- OGP -->
         <meta property="og:title" content="@yield('title', 'OW2 アンチピックチェッカー')">
-        <meta property="og:description" content="敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！オーバーウォッチ2のランク・カジュアル対戦で活用できます。">
+        <meta property="og:description" content="@yield('description', '敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！オーバーウォッチ2のランク・カジュアル対戦で活用できます。')">
         <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:image" content="{{asset('imgs/logo.png')}}">
         <meta property="og:locale" content="ja_JP">
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="@yield('title', 'OW2 アンチピックチェッカー')">
-        <meta name="twitter:description" content="敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！OW2の対戦に役立てよう。">
+        <meta name="twitter:description" content="@yield('description', '敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！OW2の対戦に役立てよう。')">
         <meta name="twitter:image" content="{{asset('imgs/logo.png')}}">
         <link rel='icon' type='image/x-icon' href='{{asset("imgs/favicon.ico")}}'/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +25,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link href="{{asset('css/app.css')}}" rel='stylesheet'>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- JSON-LD 構造化データ -->
+        @yield('jsonld')
     </head>
     <body class='container' style="background-color: #0d1117; padding: 0; max-width: 100%;">
         <div style="max-width: 960px; margin: 0 auto; padding: 0 12px;">
@@ -49,7 +53,7 @@
         <!-- Amazon 左広告 -->
         <a href="https://amzn.to/489qEQp" target="_blank" rel="noopener noreferrer" id="amazon-left">
             <div style="background:#1e2535; padding:8px; border-radius:8px; text-align:center; width:200px; box-shadow:0 4px 16px rgba(0,0,0,0.5); border: 1px solid #2a3348;">
-                <img src="https://m.media-amazon.com/images/I/61wSOwpxaQL._AC_SY450_.jpg" style="width:184px; border-radius:4px;">
+                <img src="https://m.media-amazon.com/images/I/61wSOwpxaQL._AC_SY450_.jpg" alt="Logicool G515 RAPID TKL ラピッドトリガーキーボード" style="width:184px; border-radius:4px;">
                 <div style="margin-top:8px; font-size:12px; font-weight:bold; color:#e8eaf6;">
                     Logicoolの最高傑作！
                 </div>
@@ -65,7 +69,7 @@
         <!-- Amazon 右広告 -->
         <a href="https://amzn.to/4pEfPM4" target="_blank" rel="noopener noreferrer" id="amazon-right">
             <div style="background:#1e2535; padding:8px; border-radius:8px; text-align:center; width:200px; box-shadow:0 4px 16px rgba(0,0,0,0.5); border: 1px solid #2a3348;">
-                <img src="https://m.media-amazon.com/images/I/51aHtlvwrGL._AC_SY450_.jpg" style="width:184px; border-radius:4px;">
+                <img src="https://m.media-amazon.com/images/I/51aHtlvwrGL._AC_SY450_.jpg" alt="Logicool G PRO X SUPERLIGHT 2 ゲーミングマウス" style="width:184px; border-radius:4px;">
                 <div style="margin-top:8px; font-size:12px; font-weight:bold; color:#e8eaf6;">
                     OWプロも愛用！
                 </div>
@@ -78,7 +82,7 @@
         <!-- PC/スマホ共通：ページ最下部に表示するモニター広告 -->
         <a href="https://amzn.to/48lWiJ9" target="_blank" rel="noopener noreferrer" id="amazon-monitor">
             <div style="background:#1e2535; padding:10px; border-radius:8px; text-align:center; width:200px; box-shadow:0 4px 16px rgba(0,0,0,0.5); border: 1px solid #2a3348; margin: 30px auto;">
-                <img src="https://m.media-amazon.com/images/I/71N6uQzNz8L._AC_SY450_.jpg" style="width:184px; border-radius:6px;">
+                <img src="https://m.media-amazon.com/images/I/71N6uQzNz8L._AC_SY450_.jpg" alt="BenQ MOBIUZ EX251 220Hz ゲーミングモニター" style="width:184px; border-radius:6px;">
                 <div style="margin-top:10px; font-size:12px; font-weight:bold; color:#e8eaf6;">
                     大人気メーカーの220Hz
                 </div>
