@@ -1,4 +1,5 @@
-@extends('layouts.app') @section('title','キャラ、ロール選択')
+@extends('layouts.app') @section('title','キャラ・ロール選択 | OW2 アンチピックチェッカー')
+@section('description','あなたのロールと敵チームのキャラクターを選択してください。最大5人まで選べます。オーバーウォッチ2のカウンターキャラをすぐに確認できます。')
 @section('content')
 <div style="padding: 0 4px; padding-bottom: 80px;">
 
