@@ -76,7 +76,31 @@ class PageController extends Controller
     // rankごとにグループ化
     $groupedCharacters = $sortedCharacters->groupBy('rank');
 
-    return view('choose', compact('groupedCharacters', 'scores', 'opponent_characters'));
+    // 各キャラの理由を収集（敵キャラ別）
+    $reasons = [];
+    foreach ($candidate_role as $character) {
+        $relations = $character->characterRelations()
+            ->whereIn('to_hero_id', $opponent_characters_id)
+            ->get();
+
+        $reasons[$character->id] = [];
+        foreach ($relations as $relation) {
+            $opponentChar = $characters->find($relation->to_hero_id);
+            if ($opponentChar && $relation->reason) {
+                $reasons[$character->id][] = [
+                    'opponent_name' => $opponentChar->name,
+                    'opponent_image' => $opponentChar->image_url,
+                    'reason' => $relation->reason,
+                    'score' => $relation->score,
+                ];
+            }
+        }
+
+        // 強カウンターを有利より上に表示
+        usort($reasons[$character->id], fn($a, $b) => $b['score'] - $a['score']);
+    }
+
+    return view('choose', compact('groupedCharacters', 'scores', 'opponent_characters', 'reasons'));
 }
 
 }
