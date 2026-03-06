@@ -3,6 +3,18 @@
         <title>@yield('title')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="オーバーウォッチ2の敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。">
+        <!-- OGP -->
+        <meta property="og:title" content="@yield('title', 'OW2 アンチピックチェッカー')">
+        <meta property="og:description" content="敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！オーバーウォッチ2のランク・カジュアル対戦で活用できます。">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{asset('imgs/logo.png')}}">
+        <meta property="og:locale" content="ja_JP">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="@yield('title', 'OW2 アンチピックチェッカー')">
+        <meta name="twitter:description" content="敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！OW2の対戦に役立てよう。">
+        <meta name="twitter:image" content="{{asset('imgs/logo.png')}}">
         <link rel='icon' type='image/x-icon' href='{{asset("imgs/favicon.ico")}}'/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

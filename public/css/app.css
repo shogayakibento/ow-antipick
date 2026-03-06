@@ -550,6 +550,47 @@ h2 {
     z-index: 3000;
 }
 
+/* === ROLE COLOR BORDERS ON CARDS === */
+.char-tank {
+    border-top: 3px solid var(--role-tank);
+}
+.char-damage {
+    border-top: 3px solid var(--role-damage);
+}
+.char-support {
+    border-top: 3px solid var(--role-support);
+}
+
+/* === FADE-IN ANIMATION === */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in-card {
+    animation: fadeInUp 0.35s ease both;
+}
+
+/* === STICKY BAR === */
+#sticky-bar {
+    backdrop-filter: blur(8px);
+}
+.sticky-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sticky-slot.filled {
+    border-color: #4a9eff !important;
+    border-style: solid !important;
+}
+
 @media (max-width: 768px) {
     #amazon-left {
         display: none !important;
