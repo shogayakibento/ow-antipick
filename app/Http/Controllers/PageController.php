@@ -42,30 +42,13 @@ class PageController extends Controller
     $opponent_characters_id = $opponent_characters->pluck('id');
 
     // 各キャラのスコア（score合計）を計算
-    // また各カウンター理由を取得: [character_id => [[opponent_name => reason], ...]]
     $scores = [];
-    $reasons = [];
     foreach ($candidate_role as $character) {
-        $relations = $character->characterRelations()
+        $totalScore = $character->characterRelations()
             ->whereIn('to_hero_id', $opponent_characters_id)
-            ->get();
+            ->sum('score'); // ★ count() じゃなくて score 合計
 
-        $totalScore = $relations->sum('score');
         $scores[$character->id] = $totalScore;
-
-        // 理由をまとめる: 相手キャラ名 => reason
-        $characterReasons = [];
-        foreach ($relations as $rel) {
-            if ($rel->reason) {
-                $opponentName = $characters->firstWhere('id', $rel->to_hero_id)?->name ?? '';
-                $characterReasons[] = [
-                    'opponent' => $opponentName,
-                    'reason'   => $rel->reason,
-                    'score'    => $rel->score,
-                ];
-            }
-        }
-        $reasons[$character->id] = $characterReasons;
     }
 
     // score合計の降順で並べ替え
@@ -92,6 +75,30 @@ class PageController extends Controller
 
     // rankごとにグループ化
     $groupedCharacters = $sortedCharacters->groupBy('rank');
+
+    // 各キャラの理由を収集（敵キャラ別）
+    $reasons = [];
+    foreach ($candidate_role as $character) {
+        $relations = $character->characterRelations()
+            ->whereIn('to_hero_id', $opponent_characters_id)
+            ->get();
+
+        $reasons[$character->id] = [];
+        foreach ($relations as $relation) {
+            $opponentChar = $characters->find($relation->to_hero_id);
+            if ($opponentChar && $relation->reason) {
+                $reasons[$character->id][] = [
+                    'opponent_name' => $opponentChar->name,
+                    'opponent_image' => $opponentChar->image_url,
+                    'reason' => $relation->reason,
+                    'score' => $relation->score,
+                ];
+            }
+        }
+
+        // 強カウンターを有利より上に表示
+        usort($reasons[$character->id], fn($a, $b) => $b['score'] - $a['score']);
+    }
 
     return view('choose', compact('groupedCharacters', 'scores', 'opponent_characters', 'reasons'));
 }
