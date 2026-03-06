@@ -26,6 +26,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link href="{{asset('css/app.css')}}" rel='stylesheet'>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Google AdSense -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1019568110946113" crossorigin="anonymous"></script>
     </head>
     <body class='container' style="background-color: #0d1117; padding: 0; max-width: 100%;">
         <div style="max-width: 960px; margin: 0 auto; padding: 0 12px;">
