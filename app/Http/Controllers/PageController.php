@@ -95,6 +95,9 @@ class PageController extends Controller
                 ];
             }
         }
+
+        // 強カウンターを有利より上に表示
+        usort($reasons[$character->id], fn($a, $b) => $b['score'] - $a['score']);
     }
 
     return view('choose', compact('groupedCharacters', 'scores', 'opponent_characters', 'reasons'));
