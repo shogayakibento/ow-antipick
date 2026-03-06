@@ -3,8 +3,8 @@
 @section('jsonld')
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
+  "@@context": "https://schema.org",
+  "@@type": "WebApplication",
   "name": "OW2 アンチピックチェッカー",
   "description": "オーバーウォッチ2の敵チームキャラを最大5人選ぶだけで、相性データをもとに最適なカウンターキャラをランキング形式で提案する無料ツール",
   "url": "{{ url('/') }}",
