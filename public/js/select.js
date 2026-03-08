@@ -31,7 +31,7 @@ $(function () {
         } else {
             $(".selectable-role").removeClass("selected-role");
             $(this).addClass("selected-role");
-            $("#selected-role").val($(this).text().trim());
+            $("#selected-role").val($(this).data("role"));
         }
         updateStickyBar();
     });

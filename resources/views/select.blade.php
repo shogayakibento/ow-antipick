@@ -16,13 +16,13 @@
             <i class="bi bi-person-fill" style="margin-right: 6px; color: #4a9eff;"></i>あなたのロールを選択
         </h2>
         <div class='user-role' style="padding: 0;">
-            <button type="button" class="selectable-role tank">
+            <button type="button" class="selectable-role tank" data-role="タンク">
                 🛡️ タンク
             </button>
-            <button type="button" class="selectable-role damage">
+            <button type="button" class="selectable-role damage" data-role="ダメージ">
                 ⚔️ ダメージ
             </button>
-            <button type="button" class="selectable-role support">
+            <button type="button" class="selectable-role support" data-role="サポート">
                 💚 サポート
             </button>
         </div>
