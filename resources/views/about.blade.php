@@ -100,8 +100,8 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionAbout">
                 <div class="accordion-body" style="font-size: 0.9rem; line-height: 1.8;">
-                    このサイトは <strong style="color: #f97316;">Overwatchの非公式ファンサイト</strong>です。Blizzard Entertainmentとは一切関係ありません。<br>
-                    キャラクターの相性データは管理者による独自の評価に基づいており、公式データではありません。また、パッチやメタの変化により、実際の環境と異なる場合があります。
+                    このサイトはBlizzard Entertainmentとは無関係の<strong style="color: #f97316;">非公式ファンサイト</strong>です。<br>
+                    掲載データはパッチの更新や環境の変化に応じて随時見直しています。
                 </div>
             </div>
         </div>

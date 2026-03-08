@@ -23,7 +23,7 @@
                 ⚔️ ダメージ
             </button>
             <button type="button" class="selectable-role support">
-                💖 サポート
+                <i class="bi bi-heart-fill" style="margin-right: 4px; color: #ec4899;"></i>サポート
             </button>
         </div>
         <p style="font-size: 0.75rem; color: #3a4560; margin-top: 10px; margin-bottom: 0;">
@@ -110,7 +110,7 @@
 
         <!-- サポート -->
         <div class="support" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-            💖 サポート
+            <i class="bi bi-heart-fill" style="color: #ec4899;"></i> サポート
         </div>
         <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
             <div class='character-list'>
