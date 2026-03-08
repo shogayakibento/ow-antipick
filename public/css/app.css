@@ -537,30 +537,6 @@ h2 {
 }
 
 
-/* === ADSENSE SIDEBAR ADS === */
-#adsense-left {
-    position: fixed;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    z-index: 3000;
-    width: 160px;
-}
-#adsense-right {
-    position: fixed;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    z-index: 3000;
-    width: 160px;
-}
-@media (max-width: 1300px) {
-    #adsense-left,
-    #adsense-right {
-        display: none;
-    }
-}
-
 /* === ROLE COLOR BORDERS ON CARDS === */
 .char-tank {
     border-top: 3px solid var(--role-tank);

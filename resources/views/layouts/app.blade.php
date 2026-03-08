@@ -51,27 +51,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="{{asset('js/select.js')}}"></script>
 
-        <!-- AdSense 左広告 -->
-        <div id="adsense-left">
-            <ins class="adsbygoogle"
-                 style="display:block; width:160px;"
-                 data-ad-client="ca-pub-1019568110946113"
-                 data-ad-slot="4581672280"
-                 data-ad-format="auto"
-                 data-full-width-responsive="false"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
-        <!-- AdSense 右広告 -->
-        <div id="adsense-right">
-            <ins class="adsbygoogle"
-                 style="display:block; width:160px;"
-                 data-ad-client="ca-pub-1019568110946113"
-                 data-ad-slot="4581672280"
-                 data-ad-format="auto"
-                 data-full-width-responsive="false"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
     </body>
 </html>
