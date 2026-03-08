@@ -31,7 +31,10 @@ $(function () {
         } else {
             $(".selectable-role").removeClass("selected-role");
             $(this).addClass("selected-role");
-            $("#selected-role").val($(this).text().trim());
+            // クラス名からロール名を取得（絵文字を除外するため）
+            const roleClass = ["tank", "damage", "support"].find(c => $(this).hasClass(c));
+            const roleMap = { tank: "タンク", damage: "ダメージ", support: "サポート" };
+            $("#selected-role").val(roleMap[roleClass] || "");
         }
         updateStickyBar();
     });
