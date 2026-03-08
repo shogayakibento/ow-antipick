@@ -76,7 +76,7 @@
             <div style="display: flex; align-items: flex-start; gap: 12px; text-align: left; width: 100%;">
                 <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(74,158,255,0.15); border: 1px solid rgba(74,158,255,0.4); color: #4a9eff; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">1</div>
                 <div>
-                    <div style="color: #c8d0e0; font-size: 0.85rem; font-weight: 600;">🛡️ ⚔️ 💚 ロールを選ぶ</div>
+                    <div style="color: #c8d0e0; font-size: 0.85rem; font-weight: 600;">🛡️ ⚔️ <i class="bi bi-heart-fill" style="color: #ec4899;"></i> ロールを選ぶ</div>
                     <div style="color: #5a6278; font-size: 0.77rem;">自分が使いたいロールを選択</div>
                 </div>
             </div>
