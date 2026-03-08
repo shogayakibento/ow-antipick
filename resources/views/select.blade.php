@@ -17,13 +17,13 @@
         </h2>
         <div class='user-role' style="padding: 0;">
             <button type="button" class="selectable-role tank">
-                <i class="bi bi-shield-fill" style="margin-right: 4px;"></i>タンク
+                🛡️ タンク
             </button>
             <button type="button" class="selectable-role damage">
-                <i class="bi bi-heart-arrow" style="margin-right: 4px;"></i>ダメージ
+                ⚔️ ダメージ
             </button>
             <button type="button" class="selectable-role support">
-                <i class="bi bi-heart-fill" style="margin-right: 4px;"></i>サポート
+                💚 サポート
             </button>
         </div>
         <p style="font-size: 0.75rem; color: #3a4560; margin-top: 10px; margin-bottom: 0;">
@@ -76,7 +76,7 @@
     <div class="character-container">
         <!-- タンク -->
         <div class="tank" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-            <i class="bi bi-shield-fill"></i> タンク
+            🛡️ タンク
         </div>
         <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
             <div class='character-list'>
@@ -93,7 +93,7 @@
 
         <!-- ダメージ -->
         <div class="damage" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-            <i class="bi bi-heart-arrow"></i> ダメージ
+            ⚔️ ダメージ
         </div>
         <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
             <div class='character-list'>
@@ -110,7 +110,7 @@
 
         <!-- サポート -->
         <div class="support" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
-            <i class="bi bi-heart-fill"></i> サポート
+            💚 サポート
         </div>
         <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
             <div class='character-list'>

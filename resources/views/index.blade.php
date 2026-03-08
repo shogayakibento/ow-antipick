@@ -71,21 +71,28 @@
             <i class="bi bi-play-fill" style="margin-right: 6px;"></i>診断を開始する
         </a>
 
-        <div style="margin-top: 36px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-            <div style="text-align: center; color: #5a6278; font-size: 0.8rem;">
-                <div style="font-size: 1.5rem; margin-bottom: 4px;">🛡️</div>
-                <div style="color: #4f8ef7; font-weight: 700; font-size: 1rem;">タンク</div>
-                <div>全キャラ対応</div>
+        <div style="margin-top: 36px; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 320px; margin-left: auto; margin-right: auto; margin-top: 36px;">
+            <div style="font-size: 0.72rem; color: #3a4560; letter-spacing: 0.1em; font-weight: 700; text-transform: uppercase; margin-bottom: 2px;">HOW TO USE</div>
+            <div style="display: flex; align-items: flex-start; gap: 12px; text-align: left; width: 100%;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(74,158,255,0.15); border: 1px solid rgba(74,158,255,0.4); color: #4a9eff; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">1</div>
+                <div>
+                    <div style="color: #c8d0e0; font-size: 0.85rem; font-weight: 600;">🛡️ ⚔️ 💚 ロールを選ぶ</div>
+                    <div style="color: #5a6278; font-size: 0.77rem;">自分が使いたいロールを選択</div>
+                </div>
             </div>
-            <div style="text-align: center; color: #5a6278; font-size: 0.8rem;">
-                <div style="font-size: 1.5rem; margin-bottom: 4px;">⚔️</div>
-                <div style="color: #ef4444; font-weight: 700; font-size: 1rem;">ダメージ</div>
-                <div>全キャラ対応</div>
+            <div style="display: flex; align-items: flex-start; gap: 12px; text-align: left; width: 100%;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(74,158,255,0.15); border: 1px solid rgba(74,158,255,0.4); color: #4a9eff; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">2</div>
+                <div>
+                    <div style="color: #c8d0e0; font-size: 0.85rem; font-weight: 600;">敵チームを選ぶ</div>
+                    <div style="color: #5a6278; font-size: 0.77rem;">最大5人まで選択できます</div>
+                </div>
             </div>
-            <div style="text-align: center; color: #5a6278; font-size: 0.8rem;">
-                <div style="font-size: 1.5rem; margin-bottom: 4px;">💚</div>
-                <div style="color: #ec4899; font-weight: 700; font-size: 1rem;">サポート</div>
-                <div>全キャラ対応</div>
+            <div style="display: flex; align-items: flex-start; gap: 12px; text-align: left; width: 100%;">
+                <div style="width: 22px; height: 22px; border-radius: 50%; background: rgba(74,158,255,0.15); border: 1px solid rgba(74,158,255,0.4); color: #4a9eff; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">3</div>
+                <div>
+                    <div style="color: #c8d0e0; font-size: 0.85rem; font-weight: 600;">カウンターキャラを確認</div>
+                    <div style="color: #5a6278; font-size: 0.77rem;">ランキング形式で最適キャラを提案</div>
+                </div>
             </div>
         </div>
     </div>

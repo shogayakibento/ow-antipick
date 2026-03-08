@@ -28,8 +28,34 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionAbout">
                 <div class="accordion-body" style="font-size: 0.9rem; line-height: 1.8;">
-                    <strong style="color: #4a9eff;">{{env('SITE_NAME')}}</strong>は、敵チームとのキャラクター相性をもとに、きつい相手への対策となるキャラクターを提案するツールです。<br>
+                    <strong style="color: #4a9eff;">{{env('SITE_NAME')}}</strong>は、敵チームとのキャラクター相性をもとに、苦手な相手への対策となるキャラクターを提案するツールです。<br>
                     敵チームのキャラを最大5人選択することで、相性データに基づいたカウンターキャラをランキング形式で表示します。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item" style="border: none; border-bottom: 1px solid #2a3348;">
+            <h2 class="accordion-header">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseUsage"
+                    aria-expanded="false"
+                    aria-controls="collapseUsage"
+                    style="font-size: 0.95rem; font-weight: 600;"
+                >
+                    <i class="bi bi-list-ol" style="margin-right: 10px; color: #4ade80;"></i>
+                    使い方
+                </button>
+            </h2>
+            <div id="collapseUsage" class="accordion-collapse collapse" data-bs-parent="#accordionAbout">
+                <div class="accordion-body" style="font-size: 0.9rem; line-height: 1.8;">
+                    <ol style="padding-left: 1.2em; margin: 0;">
+                        <li style="margin-bottom: 8px;"><strong style="color: #4ade80;">ロールを選ぶ</strong> ― 自分が使いたいロール（タンク・ダメージ・サポート）を選択します。</li>
+                        <li style="margin-bottom: 8px;"><strong style="color: #4ade80;">敵チームを選ぶ</strong> ― 相手チームのキャラクターを最大5人まで選択します。</li>
+                        <li><strong style="color: #4ade80;">結果を確認する</strong> ― 「診断する」を押すと、相性スコアの高い順にカウンターキャラがランキング表示されます。各キャラのカードをタップすると、有利な理由も確認できます。</li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -51,8 +77,8 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionAbout">
                 <div class="accordion-body" style="font-size: 0.9rem; line-height: 1.8;">
-                    キャラクター同士の相性データをもとに、敵5人に対して<strong style="color: #4a9eff;">有利を取れる数</strong>を計算し、スコア順にランキング形式で提示しています。<br>
-                    同スコアのキャラは同じ順位に表示されます。
+                    各キャラクターのスキル・アビリティ構成をAIで分析し、能力の相性を論理的に評価して相性データを作成しています。<br>
+                    そのデータをもとに、選んだ敵キャラ全員に対するスコアを合算してランキングを作成しています。相性には2段階あり、<strong style="color: #ef4444;">強カウンター</strong>（明確に有利）と<strong style="color: #f59e0b;">有利</strong>（やや優位）でスコアが異なります。スコアが同じキャラは同じ順位に表示されます。
                 </div>
             </div>
         </div>
@@ -74,8 +100,8 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionAbout">
                 <div class="accordion-body" style="font-size: 0.9rem; line-height: 1.8;">
-                    このサイトは <strong style="color: #f97316;">Overwatchの非公式ファンサイト</strong>です。Blizzard Entertainmentとは一切関係ありません。<br>
-                    キャラクターの相性データはファンによる主観的な評価に基づいており、公式データではありません。
+                    このサイトはBlizzard Entertainmentとは無関係の<strong style="color: #f97316;">非公式ファンサイト</strong>です。<br>
+                    掲載データはパッチの更新や環境の変化に応じて随時見直しています。
                 </div>
             </div>
         </div>

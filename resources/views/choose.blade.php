@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="modal-body" style="padding: 16px 18px; max-height: 60vh; overflow-y: auto;">
                                     @if(isset($reasons[$character->id]) && count($reasons[$character->id]) > 0)
-                                        <p style="font-size: 0.78rem; color: #5a6278; margin-bottom: 12px;">以下の敵キャラに対して有利です：</p>
+                                        <p style="font-size: 0.78rem; color: #5a6278; margin-bottom: 12px;">以下の敵キャラに対して有利を取れます：</p>
                                         @foreach($reasons[$character->id] as $reasonData)
                                             <div style="
                                                 margin-bottom: 10px;
