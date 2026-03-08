@@ -3,7 +3,7 @@
         <a href='/about' style="color: #4a9eff; text-decoration: none;">{{env('SITE_NAME')}}について</a>
     </div>
     <div style="font-size: 0.78rem; color: #5a6278;">
-        Developed by Shogo &nbsp;|&nbsp;
+        Developed by Shar0n &nbsp;|&nbsp;
         <a href='https://x.com/owstrategy' style="color: #4a9eff; text-decoration: none;">X(Twitter)</a>
     </div>
     <div style="font-size: 0.72rem; color: #3a4560; margin-top: 2px;">
