@@ -28,7 +28,7 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionAbout">
                 <div class="accordion-body" style="font-size: 0.9rem; line-height: 1.8;">
-                    <strong style="color: #4a9eff;">{{env('SITE_NAME')}}</strong>は、敵チームとのキャラクター相性をもとに、きつい相手への対策となるキャラクターを提案するツールです。<br>
+                    <strong style="color: #4a9eff;">{{env('SITE_NAME')}}</strong>は、敵チームとのキャラクター相性をもとに、苦手な相手への対策となるキャラクターを提案するツールです。<br>
                     敵チームのキャラを最大5人選択することで、相性データに基づいたカウンターキャラをランキング形式で表示します。
                 </div>
             </div>
@@ -77,8 +77,8 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionAbout">
                 <div class="accordion-body" style="font-size: 0.9rem; line-height: 1.8;">
-                    キャラクター同士の相性データをもとに、選んだ敵キャラ全員に対するスコアを合算してランキングを作成しています。<br>
-                    相性には2段階あり、<strong style="color: #ef4444;">強カウンター</strong>（明確に有利）と<strong style="color: #f59e0b;">有利</strong>（やや優位）でスコアが異なります。スコアが同じキャラは同じ順位に表示されます。
+                    各キャラクターのスキル・アビリティ構成をAIで分析し、能力の相性を論理的に評価して相性データを作成しています。<br>
+                    そのデータをもとに、選んだ敵キャラ全員に対するスコアを合算してランキングを作成しています。相性には2段階あり、<strong style="color: #ef4444;">強カウンター</strong>（明確に有利）と<strong style="color: #f59e0b;">有利</strong>（やや優位）でスコアが異なります。スコアが同じキャラは同じ順位に表示されます。
                 </div>
             </div>
         </div>
