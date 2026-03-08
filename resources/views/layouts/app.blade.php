@@ -51,50 +51,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="{{asset('js/select.js')}}"></script>
 
-        <!-- Amazon 左広告 -->
-        <a href="https://amzn.to/489qEQp" target="_blank" rel="noopener noreferrer" id="amazon-left">
-            <div style="background:#1e2535; padding:8px; border-radius:8px; text-align:center; width:200px; box-shadow:0 4px 16px rgba(0,0,0,0.5); border: 1px solid #2a3348;">
-                <img src="https://m.media-amazon.com/images/I/61wSOwpxaQL._AC_SY450_.jpg" alt="Logicool G515 RAPID TKL ラピッドトリガーキーボード" style="width:184px; border-radius:4px;">
-                <div style="margin-top:8px; font-size:12px; font-weight:bold; color:#e8eaf6;">
-                    Logicoolの最高傑作！
-                </div>
-                <div style="font-size:11px; font-weight:bold; color:#f5c518;">
-                    ラピッドトリガーキーボード🔥
-                </div>
-                <div style="margin-top:4px; font-size:11px; color:#8892a4;">
-                    Logicool G515 RAPID TKL
-                </div>
-            </div>
-        </a>
-
-        <!-- Amazon 右広告 -->
-        <a href="https://amzn.to/4pEfPM4" target="_blank" rel="noopener noreferrer" id="amazon-right">
-            <div style="background:#1e2535; padding:8px; border-radius:8px; text-align:center; width:200px; box-shadow:0 4px 16px rgba(0,0,0,0.5); border: 1px solid #2a3348;">
-                <img src="https://m.media-amazon.com/images/I/51aHtlvwrGL._AC_SY450_.jpg" alt="Logicool G PRO X SUPERLIGHT 2 ゲーミングマウス" style="width:184px; border-radius:4px;">
-                <div style="margin-top:8px; font-size:12px; font-weight:bold; color:#e8eaf6;">
-                    OWプロも愛用！
-                </div>
-                <div style="margin-top:4px; font-size:11px; color:#8892a4;">
-                    G PRO X SUPERLIGHT 2
-                </div>
-            </div>
-        </a>
-
-        <!-- PC/スマホ共通：ページ最下部に表示するモニター広告 -->
-        <a href="https://amzn.to/48lWiJ9" target="_blank" rel="noopener noreferrer" id="amazon-monitor">
-            <div style="background:#1e2535; padding:10px; border-radius:8px; text-align:center; width:200px; box-shadow:0 4px 16px rgba(0,0,0,0.5); border: 1px solid #2a3348; margin: 30px auto;">
-                <img src="https://m.media-amazon.com/images/I/71N6uQzNz8L._AC_SY450_.jpg" alt="BenQ MOBIUZ EX251 220Hz ゲーミングモニター" style="width:184px; border-radius:6px;">
-                <div style="margin-top:10px; font-size:12px; font-weight:bold; color:#e8eaf6;">
-                    大人気メーカーの220Hz
-                </div>
-                <div style="font-size:11px; font-weight:bold; color:#f5c518;">
-                    コスパ最高のモニター🔥
-                </div>
-                <div style="margin-top:6px; font-size:11px; color:#8892a4;">
-                    BenQ MOBIUZ EX251
-                </div>
-            </div>
-        </a>
-
     </body>
 </html>

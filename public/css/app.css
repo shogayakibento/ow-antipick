@@ -536,19 +536,6 @@ h2 {
     border-radius: var(--radius-sm);
 }
 
-/* === AMAZON ADS === */
-#amazon-left {
-    position: fixed;
-    top: 400px;
-    left: 20px;
-    z-index: 3000;
-}
-#amazon-right {
-    position: fixed;
-    top: 400px;
-    right: 20px;
-    z-index: 3000;
-}
 
 /* === ROLE COLOR BORDERS ON CARDS === */
 .char-tank {
@@ -592,22 +579,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    #amazon-left {
-        display: none !important;
-    }
-    #amazon-right {
-        position: static !important;
-        display: block !important;
-        margin: 20px auto !important;
-        width: fit-content !important;
-    }
-    #amazon-monitor {
-        position: static !important;
-        display: block !important;
-        margin: 20px auto !important;
-        width: fit-content !important;
-    }
-    .main-title {
+.main-title {
         font-size: 1.35rem;
     }
     .character-card {
