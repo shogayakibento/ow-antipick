@@ -9,6 +9,7 @@
     </div>
     <div class="ms-auto d-flex align-items-center gap-3" style="font-size: 0.82rem;">
         <a href='{{route("index")}}' style="color: #8892a4; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#4a9eff'" onmouseout="this.style.color='#8892a4'">トップ</a>
+        <a href='{{route("weakness")}}' style="color: #8892a4; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#ef4444'" onmouseout="this.style.color='#8892a4'"><i class="bi bi-shield-exclamation" style="margin-right: 3px;"></i>天敵チェック</a>
         <a href='{{route("about")}}' style="color: #8892a4; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#4a9eff'" onmouseout="this.style.color='#8892a4'">サイトについて</a>
         <a href='{{route("en.index")}}' style="color: #5a6278; text-decoration: none; font-size: 0.75rem; transition: color 0.2s;" onmouseover="this.style.color='#8892a4'" onmouseout="this.style.color='#5a6278'">🇺🇸 English</a>
     </div>

@@ -16,6 +16,13 @@ Route::get('/sitemap.xml', function () {
     return response()->view('sitemap')->header('Content-Type', 'application/xml');
 })->name('sitemap');
 
+// Hero detail
+Route::get('/heroes/{slug}', 'App\Http\Controllers\CharacterController@show')->name('hero.show');
+
+// Weakness (逆引き)
+Route::get('/weakness', 'App\Http\Controllers\CharacterController@weakness')->name('weakness');
+Route::post('/weakness', 'App\Http\Controllers\CharacterController@weaknessResult')->name('weakness.result');
+
 // English routes
 Route::prefix('en')->group(function () {
     Route::get('/','App\Http\Controllers\PageController@indexEn')->name('en.index');
@@ -23,4 +30,7 @@ Route::prefix('en')->group(function () {
     Route::post('/choose','App\Http\Controllers\PageController@chooseEn')->name('en.choose');
     Route::get('/about','App\Http\Controllers\PageController@aboutEn')->name('en.about');
     Route::get('/privacy','App\Http\Controllers\PageController@privacyEn')->name('en.privacy');
+    Route::get('/heroes/{slug}', 'App\Http\Controllers\CharacterController@showEn')->name('en.hero.show');
+    Route::get('/weakness', 'App\Http\Controllers\CharacterController@weaknessEn')->name('en.weakness');
+    Route::post('/weakness', 'App\Http\Controllers\CharacterController@weaknessResultEn')->name('en.weakness.result');
 });
