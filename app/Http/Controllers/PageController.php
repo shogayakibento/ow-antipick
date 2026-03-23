@@ -27,6 +27,10 @@ class PageController extends Controller
         return view('about');
     }
 
+    public function privacy(){
+        return view('privacy');
+    }
+
     // English pages
     public function indexEn(){
         return view('en.index');
@@ -39,6 +43,10 @@ class PageController extends Controller
 
     public function aboutEn(){
         return view('en.about');
+    }
+
+    public function privacyEn(){
+        return view('en.privacy');
     }
 
     public function chooseEn(Request $request)

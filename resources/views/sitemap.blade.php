@@ -49,4 +49,20 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
+    <url>
+        <loc>{{ url('/privacy') }}</loc>
+        <xhtml:link rel="alternate" hreflang="ja" href="{{ url('/privacy') }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ url('/en/privacy') }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ url('/privacy') }}"/>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>{{ url('/en/privacy') }}</loc>
+        <xhtml:link rel="alternate" hreflang="ja" href="{{ url('/privacy') }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ url('/en/privacy') }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ url('/privacy') }}"/>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>

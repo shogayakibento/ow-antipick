@@ -12,6 +12,9 @@
         <li>
             <a href='{{route("about")}}'>このサイトについて</a>
         </li>
+        <li>
+            <a href='{{route("privacy")}}'>プライバシーポリシー</a>
+        </li>
         <li style="border-top: 1px solid #2a3348; margin-top: 8px; padding-top: 8px;">
             <a href='{{route("en.index")}}' style="color: #5a6278;">🇺🇸 English</a>
         </li>
