@@ -82,7 +82,7 @@
                                     </div>
                                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" style="margin-left: auto;"></button>
                                 </div>
-                                <div class="modal-body" style="padding: 16px 18px; max-height: 60vh; overflow-y: auto;">
+                                <div class="modal-body" style="padding: 16px 18px; max-height: 55vh; overflow-y: auto;">
                                     @if(isset($reasons[$character->id]) && count($reasons[$character->id]) > 0)
                                         <p style="font-size: 0.78rem; color: #5a6278; margin-bottom: 12px;">Favorable matchups against:</p>
                                         @foreach($reasons[$character->id] as $reasonData)
@@ -112,6 +112,11 @@
                                             <i class="bi bi-info-circle" style="margin-right: 6px;"></i>No detailed info available
                                         </p>
                                     @endif
+                                </div>
+                                <div class="modal-footer" style="border-color: #2a3348; padding: 10px 18px; background: #161b27;">
+                                    <a href="{{ route('en.hero.show', $character->slug) }}" style="font-size: 0.8rem; color: #4a9eff; text-decoration: none; font-weight: 600;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+                                        <i class="bi bi-box-arrow-up-right" style="margin-right: 4px;"></i>{{ $character->name_en }} details page
+                                    </a>
                                 </div>
                             </div>
                         </div>

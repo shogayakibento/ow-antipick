@@ -82,9 +82,10 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'タンク')
-                        <div class="character-card char-tank" data-name="{{ $character->name }}">
+                        <div class="character-card char-tank" data-name="{{ $character->name }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name}}" />
                             <p>{{ $character->name }}</p>
+                            <a href="{{ route('hero.show', $character->slug) }}" onclick="event.stopPropagation();" style="font-size:0.6rem; color:#3a4560; text-decoration:none; display:block; margin-top:1px; transition:color 0.15s;" onmouseover="this.style.color='#4a9eff'" onmouseout="this.style.color='#3a4560'">詳細</a>
                         </div>
                     @endif
                 @endforeach
@@ -99,9 +100,10 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'ダメージ')
-                        <div class="character-card char-damage" data-name="{{ $character->name }}">
+                        <div class="character-card char-damage" data-name="{{ $character->name }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name}}">
                             <p>{{ $character->name }}</p>
+                            <a href="{{ route('hero.show', $character->slug) }}" onclick="event.stopPropagation();" style="font-size:0.6rem; color:#3a4560; text-decoration:none; display:block; margin-top:1px; transition:color 0.15s;" onmouseover="this.style.color='#4a9eff'" onmouseout="this.style.color='#3a4560'">詳細</a>
                         </div>
                     @endif
                 @endforeach
@@ -116,9 +118,10 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'サポート')
-                        <div class="character-card char-support" data-name="{{ $character->name }}">
+                        <div class="character-card char-support" data-name="{{ $character->name }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name}}">
                             <p>{{ $character->name }}</p>
+                            <a href="{{ route('hero.show', $character->slug) }}" onclick="event.stopPropagation();" style="font-size:0.6rem; color:#3a4560; text-decoration:none; display:block; margin-top:1px; transition:color 0.15s;" onmouseover="this.style.color='#4a9eff'" onmouseout="this.style.color='#3a4560'">詳細</a>
                         </div>
                     @endif
                 @endforeach
