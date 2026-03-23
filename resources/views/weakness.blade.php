@@ -161,25 +161,46 @@
 document.addEventListener('DOMContentLoaded', function () {
     let selected = null;
 
+    const submitBtn = document.getElementById('weakness-submit');
+    const stickySubmitBtn = document.getElementById('weakness-sticky-submit');
+    const slot = document.getElementById('weakness-selected-slot');
+    const label = document.getElementById('weakness-sticky-label');
+
+    function deselect() {
+        document.querySelectorAll('.weakness-card').forEach(c => c.classList.remove('selected'));
+        selected = null;
+        document.getElementById('selected-weakness-char').value = '';
+        slot.innerHTML = '<span style="color:#3a4560;font-size:0.7rem;">自分</span>';
+        label.textContent = 'キャラクターを1体選んでください';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.4';
+        submitBtn.style.cursor = 'not-allowed';
+        submitBtn.style.boxShadow = '0 2px 12px rgba(74,158,255,0.15)';
+        stickySubmitBtn.disabled = true;
+        stickySubmitBtn.style.opacity = '0.4';
+    }
+
     document.querySelectorAll('.weakness-card').forEach(function (card) {
         card.addEventListener('click', function () {
+            if (card.classList.contains('selected')) {
+                deselect();
+                return;
+            }
             document.querySelectorAll('.weakness-card').forEach(c => c.classList.remove('selected'));
             card.classList.add('selected');
             selected = card.dataset.name;
             document.getElementById('selected-weakness-char').value = selected;
 
             const img = card.querySelector('img');
-            const slot = document.getElementById('weakness-selected-slot');
             slot.innerHTML = '<img src="' + img.src + '" style="width:100%;height:100%;object-fit:cover;">';
 
-            document.getElementById('weakness-sticky-label').textContent = selected;
-            const submitBtn = document.getElementById('weakness-submit');
+            label.textContent = selected;
             submitBtn.disabled = false;
             submitBtn.style.opacity = '1';
             submitBtn.style.cursor = 'pointer';
             submitBtn.style.boxShadow = '0 4px 16px rgba(74,158,255,0.35)';
-            document.getElementById('weakness-sticky-submit').disabled = false;
-            document.getElementById('weakness-sticky-submit').style.opacity = '1';
+            stickySubmitBtn.disabled = false;
+            stickySubmitBtn.style.opacity = '1';
         });
     });
 });
