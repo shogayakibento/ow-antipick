@@ -74,7 +74,7 @@
         </div>
 
         <div class="support" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">💚 Support</div>
-        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
+        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px;">
             <div class="character-list">
                 @foreach($characters as $character)
                     @if($character->role == 'サポート')
@@ -87,13 +87,14 @@
             </div>
         </div>
 
-        <div style="text-align: center; padding: 20px 0 0;">
+        <div style="text-align: center; padding: 4px 0 0;">
             <button id="weakness-submit-en" type="submit" disabled style="
                 background: linear-gradient(135deg, #1d4ed8, #4a9eff);
                 color: white; border: none; border-radius: 10px;
                 padding: 12px 28px; font-weight: 700; font-size: 0.95rem;
                 cursor: not-allowed; opacity: 0.4; transition: all 0.2s;
                 box-shadow: 0 2px 12px rgba(74,158,255,0.15);
+                margin: 20px auto 0; display: block;
             ">
                 <i class="bi bi-person-lines-fill" style="margin-right: 8px;"></i>View Details
             </button>
