@@ -1,6 +1,6 @@
 @extends('layouts.app_en')
 @section('title', 'Hero Details | OW Anti-Pick Checker')
-@section('description', 'Select a hero to see counters and weaknesses in Overwatch. Plan your picks with detailed matchup info.')
+@section('description', 'Browse all Overwatch heroes and view their counters and weaknesses. Plan your picks and counter-picks for ranked and casual play.')
 @section('content')
 <div style="padding: 0 4px; padding-bottom: 8px;">
 
