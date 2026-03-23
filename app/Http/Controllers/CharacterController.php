@@ -54,16 +54,13 @@ class CharacterController extends Controller
             'character' => 'required|string|max:255',
         ]);
 
-        $characters = Character::with(['counterRelations.character'])->get();
-        $hero = $characters->firstWhere('name', $validated['character']);
+        $hero = Character::firstWhere('name', $validated['character']);
 
         if (!$hero) {
             abort(404);
         }
 
-        $weaknesses = $hero->counterRelations->sortByDesc('score');
-
-        return view('weakness_result', compact('hero', 'weaknesses'));
+        return redirect()->route('hero.show', $hero->slug);
     }
 
     public function weaknessEn()
@@ -78,15 +75,12 @@ class CharacterController extends Controller
             'character' => 'required|string|max:255',
         ]);
 
-        $characters = Character::with(['counterRelations.character'])->get();
-        $hero = $characters->firstWhere('name_en', $validated['character']);
+        $hero = Character::firstWhere('name_en', $validated['character']);
 
         if (!$hero) {
             abort(404);
         }
 
-        $weaknesses = $hero->counterRelations->sortByDesc('score');
-
-        return view('en.weakness_result', compact('hero', 'weaknesses'));
+        return redirect()->route('en.hero.show', $hero->slug);
     }
 }
