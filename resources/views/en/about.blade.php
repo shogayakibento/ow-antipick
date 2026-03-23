@@ -1,5 +1,5 @@
-@extends('layouts.app_en') @section('title','About | OW2 Anti-Pick Checker')
-@section('description','OW2 Anti-Pick Checker is an unofficial fan tool that suggests optimal counter picks against the enemy team in Overwatch 2.')
+@extends('layouts.app_en') @section('title','About | OW Anti-Pick Checker')
+@section('description','OW Anti-Pick Checker is an unofficial fan tool that suggests optimal counter picks against the enemy team in Overwatch.')
 @section('content')
 <div style="padding: 0 4px;">
 

@@ -1,5 +1,5 @@
-@extends('layouts.app_en') @section('title','Hero & Role Select | OW2 Anti-Pick Checker')
-@section('description','Choose your role and select the enemy team heroes. Up to 5 heroes can be selected. Instantly find counter picks for Overwatch 2.')
+@extends('layouts.app_en') @section('title','Hero & Role Select | OW Anti-Pick Checker')
+@section('description','Choose your role and select the enemy team heroes. Up to 5 heroes can be selected. Instantly find counter picks for Overwatch.')
 @section('content')
 <div style="padding: 0 4px; padding-bottom: 80px;">
 

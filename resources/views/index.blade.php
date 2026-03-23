@@ -1,12 +1,12 @@
-@extends('layouts.app') @section('title','【オーバーウォッチ2】 アンチピックチェッカー')
-@section('description','オーバーウォッチ2の敵チームキャラを最大5人選ぶだけで、相性データをもとに最適なカウンターキャラをランキング形式で提案する無料ツールです。')
+@extends('layouts.app') @section('title','【オーバーウォッチ】 アンチピックチェッカー')
+@section('description','オーバーウォッチの敵チームキャラを最大5人選ぶだけで、相性データをもとに最適なカウンターキャラをランキング形式で提案する無料ツールです。')
 @section('jsonld')
 <script type="application/ld+json">
 {
   "@@context": "https://schema.org",
   "@@type": "WebApplication",
-  "name": "OW2 アンチピックチェッカー",
-  "description": "オーバーウォッチ2の敵チームキャラを最大5人選ぶだけで、相性データをもとに最適なカウンターキャラをランキング形式で提案する無料ツール",
+  "name": "OW アンチピックチェッカー",
+  "description": "オーバーウォッチの敵チームキャラを最大5人選ぶだけで、相性データをもとに最適なカウンターキャラをランキング形式で提案する無料ツール",
   "url": "{{ url('/') }}",
   "applicationCategory": "GameApplication",
   "operatingSystem": "All",
@@ -52,14 +52,14 @@
             border-radius: 20px;
             letter-spacing: 0.08em;
             margin-bottom: 18px;
-        ">OVERWATCH 2 TOOL</div>
+        ">OVERWATCH TOOL</div>
 
         <h1 class="main-title">
             アンチピックチェッカー
         </h1>
 
         <p style="font-size: 0.9rem; color: #5a6278; margin-bottom: 6px; font-weight: 600;">
-            【オーバーウォッチ2】
+            【オーバーウォッチ】
         </p>
 
         <p class="lead" style="max-width: 480px; margin: 0 auto 28px;">

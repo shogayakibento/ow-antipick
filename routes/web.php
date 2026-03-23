@@ -10,6 +10,8 @@ Route::post('/choose','App\Http\Controllers\PageController@choose')->name('choos
 
 Route::get('/about','App\Http\Controllers\PageController@about')->name('about');
 
+Route::get('/privacy','App\Http\Controllers\PageController@privacy')->name('privacy');
+
 Route::get('/sitemap.xml', function () {
     return response()->view('sitemap')->header('Content-Type', 'application/xml');
 })->name('sitemap');
@@ -20,4 +22,5 @@ Route::prefix('en')->group(function () {
     Route::get('/select','App\Http\Controllers\PageController@selectEn')->name('en.select');
     Route::post('/choose','App\Http\Controllers\PageController@chooseEn')->name('en.choose');
     Route::get('/about','App\Http\Controllers\PageController@aboutEn')->name('en.about');
+    Route::get('/privacy','App\Http\Controllers\PageController@privacyEn')->name('en.privacy');
 });

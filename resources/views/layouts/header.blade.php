@@ -4,7 +4,7 @@
     </div>
     <div>
         <a href='{{route("index")}}' style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-            <img id='logo' src='{{asset("imgs/logo.png")}}' alt="OW2 アンチピックチェッカー" style="max-height: 36px;" />
+            <img id='logo' src='{{asset("imgs/logo.png")}}' alt="OW アンチピックチェッカー" style="max-height: 36px;" />
         </a>
     </div>
     <div class="ms-auto d-flex align-items-center gap-3" style="font-size: 0.82rem;">

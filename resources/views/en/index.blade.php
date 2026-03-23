@@ -1,12 +1,12 @@
-@extends('layouts.app_en') @section('title','[Overwatch 2] Anti-Pick Checker')
-@section('description','Select up to 5 enemy heroes in Overwatch 2 and get the best counter picks ranked by matchup data. Free tool.')
+@extends('layouts.app_en') @section('title','[Overwatch] Anti-Pick Checker')
+@section('description','Select up to 5 enemy heroes in Overwatch and get the best counter picks ranked by matchup data. Free tool.')
 @section('jsonld')
 <script type="application/ld+json">
 {
   "@@context": "https://schema.org",
   "@@type": "WebApplication",
-  "name": "OW2 Anti-Pick Checker",
-  "description": "Select up to 5 enemy heroes in Overwatch 2 and get the best counter picks ranked by matchup data.",
+  "name": "OW Anti-Pick Checker",
+  "description": "Select up to 5 enemy heroes in Overwatch and get the best counter picks ranked by matchup data.",
   "url": "{{ url('/en') }}",
   "applicationCategory": "GameApplication",
   "operatingSystem": "All",
@@ -52,14 +52,14 @@
             border-radius: 20px;
             letter-spacing: 0.08em;
             margin-bottom: 18px;
-        ">OVERWATCH 2 TOOL</div>
+        ">OVERWATCH TOOL</div>
 
         <h1 class="main-title">
             Anti-Pick Checker
         </h1>
 
         <p style="font-size: 0.9rem; color: #5a6278; margin-bottom: 6px; font-weight: 600;">
-            [Overwatch 2]
+            [Overwatch]
         </p>
 
         <p class="lead" style="max-width: 480px; margin: 0 auto 28px;">

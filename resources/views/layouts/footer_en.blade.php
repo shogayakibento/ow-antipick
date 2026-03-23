@@ -1,6 +1,7 @@
 <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 16px 0 12px;">
-    <div style="font-size: 0.8rem; color: #8892a4;">
+    <div style="font-size: 0.8rem; color: #8892a4; display: flex; gap: 16px;">
         <a href='{{route("en.about")}}' style="color: #4a9eff; text-decoration: none;">About {{env('SITE_NAME')}}</a>
+        <a href='{{route("en.privacy")}}' style="color: #4a9eff; text-decoration: none;">Privacy Policy</a>
     </div>
     <div style="font-size: 0.78rem; color: #5a6278;">
         Developed by Shar0n &nbsp;|&nbsp;

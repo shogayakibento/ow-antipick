@@ -1,5 +1,5 @@
-@extends('layouts.app_en') @section('title','Counter Pick Results | OW2 Anti-Pick Checker')
-@section('description','Your optimal counter picks ranked by matchup score. Use these heroes against the enemy team in Overwatch 2.')
+@extends('layouts.app_en') @section('title','Counter Pick Results | OW Anti-Pick Checker')
+@section('description','Your optimal counter picks ranked by matchup score. Use these heroes against the enemy team in Overwatch.')
 @section('content')
 <div style="padding: 0 4px;">
 
