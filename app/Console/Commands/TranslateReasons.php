@@ -46,21 +46,43 @@ class TranslateReasons extends Command
 
         $failed = 0;
         foreach ($relations as $relation) {
-            $response = Http::withHeaders([
-                'Authorization' => "DeepL-Auth-Key {$apiKey}",
-            ])->post($endpoint, [
-                'text'        => [$relation->reason],
-                'source_lang' => 'JA',
-                'target_lang' => 'EN-US',
-            ]);
+            $translated = null;
+            $attempts = 0;
+            $delays = [2, 4, 8];
 
-            if ($response->successful()) {
-                $translated = $response->json('translations.0.text');
+            while ($attempts <= count($delays)) {
+                try {
+                    $response = Http::timeout(30)->withHeaders([
+                        'Authorization' => "DeepL-Auth-Key {$apiKey}",
+                    ])->post($endpoint, [
+                        'text'        => [$relation->reason],
+                        'source_lang' => 'JA',
+                        'target_lang' => 'EN-US',
+                    ]);
+
+                    if ($response->successful()) {
+                        $translated = $response->json('translations.0.text');
+                    } else {
+                        $this->newLine();
+                        $this->warn("Failed for id={$relation->id}: " . $response->status());
+                        $failed++;
+                    }
+                    break;
+                } catch (\Illuminate\Http\Client\ConnectionException $e) {
+                    if ($attempts < count($delays)) {
+                        sleep($delays[$attempts]);
+                        $attempts++;
+                    } else {
+                        $this->newLine();
+                        $this->warn("Skipping id={$relation->id} after " . ($attempts + 1) . " attempts: timeout");
+                        $failed++;
+                        break;
+                    }
+                }
+            }
+
+            if ($translated !== null) {
                 $relation->update(['reason_en' => $translated]);
-            } else {
-                $this->newLine();
-                $this->warn("Failed for id={$relation->id}: " . $response->status());
-                $failed++;
             }
 
             $bar->advance();
