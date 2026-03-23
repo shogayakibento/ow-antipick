@@ -161,7 +161,7 @@
             border-radius: 8px; padding: 10px 18px;
             font-weight: 600; font-size: 0.85rem; text-decoration: none;
         ">
-            <i class="bi bi-shield-exclamation"></i>天敵チェッカーへ
+            <i class="bi bi-person-lines-fill"></i>キャラ詳細一覧へ
         </a>
     </div>
 

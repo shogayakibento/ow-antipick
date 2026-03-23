@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '天敵チェッカー | OW アンチピックチェッカー')
+@section('title', 'キャラ詳細 | OW アンチピックチェッカー')
 @section('description', '自分が使うキャラを選ぶと、そのキャラに有利なキャラ（天敵）を一覧表示します。オーバーウォッチの対策に役立てよう。')
 @section('content')
 <div style="padding: 0 4px; padding-bottom: 80px;">
@@ -24,11 +24,11 @@
             border-radius: 20px;
             letter-spacing: 0.08em;
             margin-bottom: 14px;
-        ">WEAKNESS CHECKER</div>
-        <h1 style="font-size: 1.4rem; font-weight: 800; color: #e8eaf6; margin-bottom: 8px;">天敵チェッカー</h1>
+        ">HERO DETAILS</div>
+        <h1 style="font-size: 1.4rem; font-weight: 800; color: #e8eaf6; margin-bottom: 8px;">キャラ詳細</h1>
         <p style="font-size: 0.88rem; color: #8892a4; margin: 0; max-width: 380px; margin: 0 auto;">
-            自分が使うキャラクターを選ぶと、<br>
-            そのキャラに<strong style="color: #ef4444;">強いキャラ（天敵）</strong>を一覧表示します。
+            キャラクターを選ぶと、<br>
+            <strong style="color: #4a9eff;">カウンター</strong>と<strong style="color: #ef4444;">天敵</strong>を詳しく確認できます。
         </p>
     </div>
 

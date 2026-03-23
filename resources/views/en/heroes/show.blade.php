@@ -165,7 +165,7 @@
             border-radius: 8px; padding: 10px 18px;
             font-weight: 600; font-size: 0.85rem; text-decoration: none;
         ">
-            <i class="bi bi-shield-exclamation"></i>Weakness Checker
+            <i class="bi bi-person-lines-fill"></i>All Heroes
         </a>
     </div>
 

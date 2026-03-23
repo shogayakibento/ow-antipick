@@ -1,6 +1,6 @@
 @extends('layouts.app_en')
-@section('title', 'Weakness Checker | OW Anti-Pick Checker')
-@section('description', 'Select your hero and see which heroes counter you in Overwatch. Find your weaknesses and plan accordingly.')
+@section('title', 'Hero Details | OW Anti-Pick Checker')
+@section('description', 'Select a hero to see counters and weaknesses in Overwatch. Plan your picks with detailed matchup info.')
 @section('content')
 <div style="padding: 0 4px; padding-bottom: 80px;">
 
@@ -23,11 +23,11 @@
             border-radius: 20px;
             letter-spacing: 0.08em;
             margin-bottom: 14px;
-        ">WEAKNESS CHECKER</div>
-        <h1 style="font-size: 1.4rem; font-weight: 800; color: #e8eaf6; margin-bottom: 8px;">Weakness Checker</h1>
+        ">HERO DETAILS</div>
+        <h1 style="font-size: 1.4rem; font-weight: 800; color: #e8eaf6; margin-bottom: 8px;">Hero Details</h1>
         <p style="font-size: 0.88rem; color: #8892a4; margin: 0 auto; max-width: 380px;">
-            Select your hero to see which heroes<br>
-            <strong style="color: #ef4444;">counter you</strong> and why.
+            Select a hero to view<br>
+            <strong style="color: #4a9eff;">counters</strong> and <strong style="color: #ef4444;">weaknesses</strong> in detail.
         </p>
     </div>
 
