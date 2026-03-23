@@ -71,11 +71,11 @@ $(function () {
         }
 
         // hidden inputs 更新
-        $("form input[name^='character']").remove();
+        $("#select-form input[name^='character']").remove();
         $.each(selected_characters, function (index, value) {
             $("<input>")
                 .attr({ type: "hidden", name: "character[" + index + "]", value: value })
-                .appendTo("form");
+                .appendTo("#select-form");
         });
 
         updateStickyBar();
