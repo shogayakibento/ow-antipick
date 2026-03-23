@@ -131,7 +131,7 @@
         <input type="hidden" name="role" id="selected-role" value=''>
         <input type="hidden" name="character[]" id="selected-character" value=''>
         {{-- 通常の送信ボタン（スクロール位置に依存しないフォールバック） --}}
-        <div style="text-align: center; padding: 4px 0;">
+        <div style="text-align: center; padding: 4px 0 0;">
             <button id='submit' type='submit' disabled style="opacity: 0.4; cursor: not-allowed;">
                 <i class="bi bi-search" style="margin-right: 6px;"></i>最適アンチピックを表示
             </button>
