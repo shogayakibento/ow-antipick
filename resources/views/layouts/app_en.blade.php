@@ -1,25 +1,25 @@
-<html lang="ja">
+<html lang="en">
     <head>
         <title>@yield('title')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="@yield('description', 'オーバーウォッチ2の敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。')">
+        <meta name="description" content="@yield('description', 'Select the enemy team in Overwatch 2 to get the best counter picks based on matchup data.')">
         <link rel="canonical" href="{{ url()->current() }}">
         <!-- hreflang -->
-        <link rel="alternate" hreflang="ja" href="{{ url()->current() }}">
-        <link rel="alternate" hreflang="en" href="{{ url('/en') }}">
+        <link rel="alternate" hreflang="en" href="{{ url()->current() }}">
+        <link rel="alternate" hreflang="ja" href="{{ url('/') }}">
         <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
         <!-- OGP -->
-        <meta property="og:title" content="@yield('title', 'OW2 アンチピックチェッカー')">
-        <meta property="og:description" content="@yield('description', '敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！オーバーウォッチ2のランク・カジュアル対戦で活用できます。')">
+        <meta property="og:title" content="@yield('title', 'OW2 Anti-Pick Checker')">
+        <meta property="og:description" content="@yield('description', 'Just pick the enemy heroes to get optimal counter picks for Overwatch 2!')">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:image" content="{{asset('imgs/logo.png')}}">
-        <meta property="og:locale" content="ja_JP">
+        <meta property="og:locale" content="en_US">
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="@yield('title', 'OW2 アンチピックチェッカー')">
-        <meta name="twitter:description" content="@yield('description', '敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！OW2の対戦に役立てよう。')">
+        <meta name="twitter:title" content="@yield('title', 'OW2 Anti-Pick Checker')">
+        <meta name="twitter:description" content="@yield('description', 'Just pick the enemy heroes to get optimal counter picks for Overwatch 2!')">
         <meta name="twitter:image" content="{{asset('imgs/logo.png')}}">
         @yield('jsonld')
         <link rel='icon' type='image/x-icon' href='{{asset("imgs/favicon.ico")}}'/>
@@ -37,7 +37,7 @@
         <div style="max-width: 960px; margin: 0 auto; padding: 0 12px;">
 
             <div id='header' style="background-color: #080c14; border-bottom: 1px solid #2a3348;">
-                @include('layouts.header')
+                @include('layouts.header_en')
             </div>
 
             <div style="background-color: #161b27; min-height: 60vh; padding: 24px 0;">
@@ -45,12 +45,12 @@
             </div>
 
             <div id='footer'>
-                @include('layouts.footer')
+                @include('layouts.footer_en')
             </div>
 
         </div>
         <div id='sidebar'>
-            @include('layouts.sidebar')
+            @include('layouts.sidebar_en')
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="{{asset('js/select.js')}}"></script>
