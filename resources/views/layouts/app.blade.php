@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="@yield('description', 'オーバーウォッチ2の敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。')">
         <link rel="canonical" href="{{ url()->current() }}">
+        <!-- hreflang -->
+        <link rel="alternate" hreflang="ja" href="{{ url()->current() }}">
+        <link rel="alternate" hreflang="en" href="{{ url('/en') }}">
+        <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
         <!-- OGP -->
         <meta property="og:title" content="@yield('title', 'OW2 アンチピックチェッカー')">
         <meta property="og:description" content="@yield('description', '敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！オーバーウォッチ2のランク・カジュアル対戦で活用できます。')">
