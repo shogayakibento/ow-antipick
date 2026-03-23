@@ -154,17 +154,37 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    const slot = document.getElementById('weakness-selected-slot-en');
+    const label = document.getElementById('weakness-sticky-label-en');
+
+    function deselect() {
+        document.querySelectorAll('.weakness-card-en').forEach(c => c.classList.remove('selected'));
+        document.getElementById('selected-weakness-char-en').value = '';
+        slot.innerHTML = '<span style="color:#3a4560;font-size:0.7rem;">You</span>';
+        label.textContent = 'Select a hero';
+        ['weakness-submit-en', 'weakness-sticky-submit-en'].forEach(function(id) {
+            const btn = document.getElementById(id);
+            btn.disabled = true;
+            btn.style.opacity = '0.4';
+            btn.style.cursor = 'not-allowed';
+            btn.style.boxShadow = '0 2px 10px rgba(74,158,255,0.15)';
+        });
+    }
+
     document.querySelectorAll('.weakness-card-en').forEach(function (card) {
         card.addEventListener('click', function () {
+            if (card.classList.contains('selected')) {
+                deselect();
+                return;
+            }
             document.querySelectorAll('.weakness-card-en').forEach(c => c.classList.remove('selected'));
             card.classList.add('selected');
             const name = card.dataset.name;
             document.getElementById('selected-weakness-char-en').value = name;
 
             const img = card.querySelector('img');
-            const slot = document.getElementById('weakness-selected-slot-en');
             slot.innerHTML = '<img src="' + img.src + '" style="width:100%;height:100%;object-fit:cover;">';
-            document.getElementById('weakness-sticky-label-en').textContent = name;
+            label.textContent = name;
 
             ['weakness-submit-en', 'weakness-sticky-submit-en'].forEach(function(id) {
                 const btn = document.getElementById(id);
