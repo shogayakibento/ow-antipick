@@ -1,7 +1,7 @@
 @extends('layouts.app') @section('title','アンチピック結果 | OW アンチピックチェッカー')
 @section('description','相性データをもとに算出した、あなたへの最適カウンターキャラランキングです。オーバーウォッチの対戦で活用しましょう。')
 @section('content')
-<div style="padding: 0 4px 8px;">
+<div style="padding: 0 4px 20px;">
 
     <!-- 敵チーム表示 -->
     <div style="
