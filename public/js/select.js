@@ -103,7 +103,7 @@ $(function () {
         // 送信ボタン有効化（キャラ1体以上 & ロール選択済み）
         const roleSelected = $("#selected-role").val() !== "";
         const canSubmit = count > 0 && roleSelected;
-        $("#sticky-submit")
+        $("#sticky-submit, #submit")
             .prop("disabled", !canSubmit)
             .css("opacity", canSubmit ? "1" : "0.4")
             .css("cursor", canSubmit ? "pointer" : "not-allowed");

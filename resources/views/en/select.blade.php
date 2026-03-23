@@ -131,7 +131,7 @@
         <input type="hidden" name="role" id="selected-role" value=''>
         <input type="hidden" name="character[]" id="selected-character" value=''>
         <div style="text-align: center; padding: 8px 0 16px;">
-            <button id='submit' type='submit'>
+            <button id='submit' type='submit' disabled style="opacity: 0.4; cursor: not-allowed;">
                 <i class="bi bi-search" style="margin-right: 6px;"></i>Find Counter Picks
             </button>
         </div>
