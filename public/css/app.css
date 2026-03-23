@@ -266,7 +266,7 @@ h2 {
 
 /* === CHARACTER CONTAINER === */
 .character-container {
-    padding: 8px 0;
+    padding: 8px 0 0;
 }
 .character-list {
     display: flex;

@@ -112,7 +112,7 @@
         <div class="support" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
             💚 サポート
         </div>
-        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
+        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px;">
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'サポート')
@@ -131,7 +131,7 @@
         <input type="hidden" name="role" id="selected-role" value=''>
         <input type="hidden" name="character[]" id="selected-character" value=''>
         {{-- 通常の送信ボタン（スクロール位置に依存しないフォールバック） --}}
-        <div style="text-align: center; padding: 8px 0 4px;">
+        <div style="text-align: center; padding: 4px 0;">
             <button id='submit' type='submit' disabled style="opacity: 0.4; cursor: not-allowed;">
                 <i class="bi bi-search" style="margin-right: 6px;"></i>最適アンチピックを表示
             </button>
