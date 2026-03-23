@@ -23,7 +23,6 @@ Route::get('/heroes/{slug}', 'App\Http\Controllers\CharacterController@show')->n
 // Character details (キャラ詳細)
 Route::get('/heroes', 'App\Http\Controllers\CharacterController@weakness')->name('weakness');
 Route::post('/heroes', 'App\Http\Controllers\CharacterController@weaknessResult')->name('weakness.result');
-Route::redirect('/weakness', '/heroes', 301);
 
 // English routes
 Route::prefix('en')->group(function () {
@@ -35,5 +34,4 @@ Route::prefix('en')->group(function () {
     Route::get('/heroes/{slug}', 'App\Http\Controllers\CharacterController@showEn')->name('en.hero.show');
     Route::get('/heroes', 'App\Http\Controllers\CharacterController@weaknessEn')->name('en.weakness');
     Route::post('/heroes', 'App\Http\Controllers\CharacterController@weaknessResultEn')->name('en.weakness.result');
-    Route::redirect('/weakness', '/en/heroes', 301);
 });
