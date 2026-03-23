@@ -91,11 +91,11 @@
             </div>
         </div>
 
-        <div style="text-align: center; padding: 8px 0 16px;">
+        <div style="text-align: center; padding: 4px 0 8px;">
             <button id="weakness-submit" type="submit" disabled style="
                 background: linear-gradient(135deg, #1d4ed8, #4a9eff);
-                color: white; border: none; border-radius: 10px;
-                padding: 12px 28px; font-weight: 700; font-size: 0.95rem;
+                color: white; border: none; border-radius: 8px;
+                padding: 8px 20px; font-weight: 700; font-size: 0.88rem;
                 cursor: not-allowed; opacity: 0.4; transition: all 0.2s;
                 box-shadow: 0 2px 12px rgba(74,158,255,0.15);
             ">
