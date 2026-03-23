@@ -2,7 +2,7 @@
 @section('title', 'キャラ詳細 | OW アンチピックチェッカー')
 @section('description', '自分が使うキャラを選ぶと、そのキャラに有利なキャラ（天敵）を一覧表示します。オーバーウォッチの対策に役立てよう。')
 @section('content')
-<div style="padding: 0 4px; padding-bottom: 80px;">
+<div style="padding: 0 4px; padding-bottom: 8px;">
 
     {{-- ヘッダー --}}
     <div style="

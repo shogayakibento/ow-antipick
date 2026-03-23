@@ -2,7 +2,7 @@
 @section('title', 'Hero Details | OW Anti-Pick Checker')
 @section('description', 'Select a hero to see counters and weaknesses in Overwatch. Plan your picks with detailed matchup info.')
 @section('content')
-<div style="padding: 0 4px; padding-bottom: 80px;">
+<div style="padding: 0 4px; padding-bottom: 8px;">
 
     <div style="
         text-align: center;
