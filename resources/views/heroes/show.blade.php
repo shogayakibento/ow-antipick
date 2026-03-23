@@ -146,7 +146,7 @@
         @endif
     </div>
 
-    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
         <a href="{{ route('select') }}" style="
             display: inline-flex; align-items: center; gap: 6px;
             background: linear-gradient(135deg, #1d4ed8, #4a9eff);
