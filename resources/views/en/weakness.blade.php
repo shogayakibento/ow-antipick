@@ -88,8 +88,14 @@
         </div>
 
         <div style="text-align: center; padding: 8px 0 16px;">
-            <button id="weakness-submit-en" type="submit" disabled style="opacity: 0.4; cursor: not-allowed;">
-                <i class="bi bi-shield-exclamation" style="margin-right: 6px;"></i>Show Counters
+            <button id="weakness-submit-en" type="submit" disabled style="
+                background: linear-gradient(135deg, #1d4ed8, #4a9eff);
+                color: white; border: none; border-radius: 10px;
+                padding: 12px 28px; font-weight: 700; font-size: 0.95rem;
+                cursor: not-allowed; opacity: 0.4; transition: all 0.2s;
+                box-shadow: 0 2px 12px rgba(74,158,255,0.15);
+            ">
+                <i class="bi bi-person-lines-fill" style="margin-right: 8px;"></i>View Details
             </button>
         </div>
     </form>
@@ -127,7 +133,7 @@
         form="weakness-form-en"
         disabled
         style="
-            background: linear-gradient(135deg, #7c1d1d, #ef4444);
+            background: linear-gradient(135deg, #1d4ed8, #4a9eff);
             color: white;
             border: none;
             border-radius: 8px;
@@ -138,9 +144,10 @@
             opacity: 0.4;
             transition: all 0.2s;
             white-space: nowrap;
+            box-shadow: 0 2px 10px rgba(74,158,255,0.15);
         "
     >
-        <i class="bi bi-shield-exclamation" style="margin-right: 4px;"></i>Show Counters
+        <i class="bi bi-person-lines-fill" style="margin-right: 4px;"></i>View Details
     </button>
 </div>
 
@@ -162,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const btn = document.getElementById(id);
                 btn.disabled = false;
                 btn.style.opacity = '1';
+                btn.style.boxShadow = '0 4px 16px rgba(74,158,255,0.35)';
                 btn.style.cursor = 'pointer';
             });
         });
