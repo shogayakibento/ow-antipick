@@ -473,7 +473,7 @@ h2 {
 .return {
     display: block;
     width: fit-content;
-    margin: 28px auto;
+    margin: 20px auto 0;
     padding: 12px 30px;
     background: linear-gradient(135deg, var(--accent-blue-dark), var(--accent-blue));
     color: white;

@@ -91,7 +91,7 @@
             </div>
         </div>
 
-        <div style="text-align: center; padding: 8px 0 16px;">
+        <div style="text-align: center; padding: 20px 0 0;">
             <button id="weakness-submit" type="submit" disabled style="
                 background: linear-gradient(135deg, #1d4ed8, #4a9eff);
                 color: white; border: none; border-radius: 10px;
