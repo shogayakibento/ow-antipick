@@ -4,7 +4,7 @@
     </div>
     <div>
         <a href='{{route("en.index")}}' style="display: flex; align-items: center; text-decoration: none; gap: 10px;">
-            <img id='logo' src='{{asset("imgs/logo.png")}}' alt="OW2 Anti-Pick Checker" style="max-height: 36px;" />
+            <img id='logo' src='{{asset("imgs/logo.png")}}' alt="OW Anti-Pick Checker" style="max-height: 36px;" />
         </a>
     </div>
     <div class="ms-auto d-flex align-items-center gap-3" style="font-size: 0.82rem;">

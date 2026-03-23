@@ -1,5 +1,5 @@
-@extends('layouts.app_en') @section('title','Privacy Policy | OW2 Anti-Pick Checker')
-@section('description','Privacy Policy for OW2 Anti-Pick Checker. Information about advertising, cookies, and data collection.')
+@extends('layouts.app_en') @section('title','Privacy Policy | OW Anti-Pick Checker')
+@section('description','Privacy Policy for OW Anti-Pick Checker. Information about advertising, cookies, and data collection.')
 @section('content')
 <div style="padding: 0 4px;">
 

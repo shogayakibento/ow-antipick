@@ -3,23 +3,23 @@
         <title>@yield('title')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="@yield('description', 'Select the enemy team in Overwatch 2 to get the best counter picks based on matchup data.')">
+        <meta name="description" content="@yield('description', 'Select the enemy team in Overwatch to get the best counter picks based on matchup data.')">
         <link rel="canonical" href="{{ url()->current() }}">
         <!-- hreflang -->
         <link rel="alternate" hreflang="en" href="{{ url()->current() }}">
         <link rel="alternate" hreflang="ja" href="{{ url('/') }}">
         <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
         <!-- OGP -->
-        <meta property="og:title" content="@yield('title', 'OW2 Anti-Pick Checker')">
-        <meta property="og:description" content="@yield('description', 'Just pick the enemy heroes to get optimal counter picks for Overwatch 2!')">
+        <meta property="og:title" content="@yield('title', 'OW Anti-Pick Checker')">
+        <meta property="og:description" content="@yield('description', 'Just pick the enemy heroes to get optimal counter picks for Overwatch!')">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:image" content="{{asset('imgs/logo.png')}}">
         <meta property="og:locale" content="en_US">
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="@yield('title', 'OW2 Anti-Pick Checker')">
-        <meta name="twitter:description" content="@yield('description', 'Just pick the enemy heroes to get optimal counter picks for Overwatch 2!')">
+        <meta name="twitter:title" content="@yield('title', 'OW Anti-Pick Checker')">
+        <meta name="twitter:description" content="@yield('description', 'Just pick the enemy heroes to get optimal counter picks for Overwatch!')">
         <meta name="twitter:image" content="{{asset('imgs/logo.png')}}">
         @yield('jsonld')
         <link rel='icon' type='image/x-icon' href='{{asset("imgs/favicon.ico")}}'/>

@@ -1,5 +1,5 @@
-@extends('layouts.app') @section('title','プライバシーポリシー | OW2 アンチピックチェッカー')
-@section('description','OW2 アンチピックチェッカーのプライバシーポリシーです。広告・Cookie・アクセス解析に関する情報をご確認ください。')
+@extends('layouts.app') @section('title','プライバシーポリシー | OW アンチピックチェッカー')
+@section('description','OW アンチピックチェッカーのプライバシーポリシーです。広告・Cookie・アクセス解析に関する情報をご確認ください。')
 @section('content')
 <div style="padding: 0 4px;">
 
