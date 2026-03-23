@@ -176,7 +176,8 @@
     <!-- Submit button -->
     <button
         id="sticky-submit"
-        onclick="$('#select-form').submit()"
+        type="submit"
+        form="select-form"
         disabled
         style="
             background: linear-gradient(135deg, #1d4ed8, #4a9eff);
