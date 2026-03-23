@@ -82,9 +82,9 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'タンク')
-                        <div class="character-card char-tank" data-name="{{ $character->name }}">
-                            <img src="{{$character->image_url}}" alt="{{$character->name}}" />
-                            <p>{{ $character->name }}</p>
+                        <div class="character-card char-tank" data-name="{{ $character->name_en }}">
+                            <img src="{{$character->image_url}}" alt="{{$character->name_en}}" />
+                            <p>{{ $character->name_en }}</p>
                         </div>
                     @endif
                 @endforeach
@@ -99,9 +99,9 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'ダメージ')
-                        <div class="character-card char-damage" data-name="{{ $character->name }}">
-                            <img src="{{$character->image_url}}" alt="{{$character->name}}">
-                            <p>{{ $character->name }}</p>
+                        <div class="character-card char-damage" data-name="{{ $character->name_en }}">
+                            <img src="{{$character->image_url}}" alt="{{$character->name_en}}">
+                            <p>{{ $character->name_en }}</p>
                         </div>
                     @endif
                 @endforeach
@@ -116,9 +116,9 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'サポート')
-                        <div class="character-card char-support" data-name="{{ $character->name }}">
-                            <img src="{{$character->image_url}}" alt="{{$character->name}}">
-                            <p>{{ $character->name }}</p>
+                        <div class="character-card char-support" data-name="{{ $character->name_en }}">
+                            <img src="{{$character->image_url}}" alt="{{$character->name_en}}">
+                            <p>{{ $character->name_en }}</p>
                         </div>
                     @endif
                 @endforeach

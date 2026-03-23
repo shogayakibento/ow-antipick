@@ -18,8 +18,8 @@
         <div class="opponent-character-list">
             @foreach($opponent_characters as $opponent_character)
                 <div class="opponent-character-card">
-                    <img src="{{ $opponent_character->image_url }}" alt="{{ $opponent_character->name }}" />
-                    <p>{{ $opponent_character->name }}</p>
+                    <img src="{{ $opponent_character->image_url }}" alt="{{ $opponent_character->name_en }}" />
+                    <p>{{ $opponent_character->name_en }}</p>
                 </div>
             @endforeach
         </div>
@@ -57,8 +57,8 @@
                         data-bs-toggle="modal"
                         data-bs-target="#modal-{{ $character->id }}"
                     >
-                        <img src="{{ $character->image_url }}" alt="{{ $character->name }}" />
-                        <p style="font-weight: 700; color: #c8d0e0;">{{ $character->name }}</p>
+                        <img src="{{ $character->image_url }}" alt="{{ $character->name_en }}" />
+                        <p style="font-weight: 700; color: #c8d0e0;">{{ $character->name_en }}</p>
                         @if(isset($reasons[$character->id]) && count($reasons[$character->id]) > 0)
                             <div style="font-size: 0.6rem; color: #4a9eff; margin-top: 2px; letter-spacing: 0.03em;">
                                 <i class="bi bi-info-circle-fill"></i> See why
@@ -74,7 +74,7 @@
                                     <div style="display: flex; align-items: center; gap: 12px;">
                                         <img src="{{ $character->image_url }}" style="width: 44px; height: 44px; border-radius: 8px; object-fit: cover; border: 2px solid #4a9eff;">
                                         <div>
-                                            <h5 class="modal-title" style="margin: 0; font-size: 1rem; font-weight: 700;">{{ $character->name }}</h5>
+                                            <h5 class="modal-title" style="margin: 0; font-size: 1rem; font-weight: 700;">{{ $character->name_en }}</h5>
                                             <div style="font-size: 0.75rem; color: #8892a4;">
                                                 Score: <span style="color: #4a9eff; font-weight: 700;">{{ $scores[$character->id] ?? 0 }}</span>
                                             </div>

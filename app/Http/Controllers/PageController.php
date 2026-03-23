@@ -56,7 +56,7 @@ class PageController extends Controller
         $characters = Character::all();
 
         $candidate_role = $characters->where('role', $selectedRole);
-        $opponent_characters = $characters->whereIn('name', $selected_characters);
+        $opponent_characters = $characters->whereIn('name_en', $selected_characters);
         $opponent_characters_id = $opponent_characters->pluck('id');
 
         $scores = [];
@@ -100,7 +100,7 @@ class PageController extends Controller
                     $reasonText = $relation->reason_en ?: $relation->reason;
                     if ($reasonText) {
                         $reasons[$character->id][] = [
-                            'opponent_name'  => $opponentChar->name,
+                            'opponent_name'  => $opponentChar->name_en,
                             'opponent_image' => $opponentChar->image_url,
                             'reason'         => $reasonText,
                             'score'          => $relation->score,
