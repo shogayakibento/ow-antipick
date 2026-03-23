@@ -132,7 +132,7 @@
         <input type="hidden" name="character[]" id="selected-character" value=''>
         {{-- 通常の送信ボタン（スクロール位置に依存しないフォールバック） --}}
         <div style="text-align: center; padding: 8px 0 16px;">
-            <button id='submit' type='submit'>
+            <button id='submit' type='submit' disabled style="opacity: 0.4; cursor: not-allowed;">
                 <i class="bi bi-search" style="margin-right: 6px;"></i>最適アンチピックを表示
             </button>
         </div>
@@ -177,7 +177,8 @@
     <!-- 送信ボタン -->
     <button
         id="sticky-submit"
-        onclick="$('#select-form').submit()"
+        type="submit"
+        form="select-form"
         disabled
         style="
             background: linear-gradient(135deg, #1d4ed8, #4a9eff);

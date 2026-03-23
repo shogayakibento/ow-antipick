@@ -257,7 +257,8 @@ h2 {
     box-shadow: var(--shadow-blue);
     letter-spacing: 0.03em;
 }
-#submit:hover {
+#submit:hover,
+#sticky-submit:not(:disabled):hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(74, 158, 255, 0.45);
     filter: brightness(1.1);
