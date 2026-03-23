@@ -40,7 +40,7 @@
                 @include('layouts.header')
             </div>
 
-            <div style="background-color: #161b27; min-height: 60vh; padding: 24px 0;">
+            <div style="background-color: #161b27; padding: 24px 0;">
                 @yield('content')
             </div>
 
