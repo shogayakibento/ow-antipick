@@ -34,6 +34,40 @@
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>{{ url('/heroes') }}</loc>
+        <xhtml:link rel="alternate" hreflang="ja" href="{{ url('/heroes') }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ url('/en/heroes') }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ url('/heroes') }}"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>{{ url('/en/heroes') }}</loc>
+        <xhtml:link rel="alternate" hreflang="ja" href="{{ url('/heroes') }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ url('/en/heroes') }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ url('/heroes') }}"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    @foreach($characters as $character)
+    <url>
+        <loc>{{ url('/heroes/' . $character->slug) }}</loc>
+        <xhtml:link rel="alternate" hreflang="ja" href="{{ url('/heroes/' . $character->slug) }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ url('/en/heroes/' . $character->slug) }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ url('/heroes/' . $character->slug) }}"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>{{ url('/en/heroes/' . $character->slug) }}</loc>
+        <xhtml:link rel="alternate" hreflang="ja" href="{{ url('/heroes/' . $character->slug) }}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ url('/en/heroes/' . $character->slug) }}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ url('/heroes/' . $character->slug) }}"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    @endforeach
+    <url>
         <loc>{{ url('/about') }}</loc>
         <xhtml:link rel="alternate" hreflang="ja" href="{{ url('/about') }}"/>
         <xhtml:link rel="alternate" hreflang="en" href="{{ url('/en/about') }}"/>

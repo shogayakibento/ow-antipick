@@ -248,7 +248,7 @@ h2 {
     align-items: center;
     gap: 8px;
     text-align: center;
-    margin: 24px auto;
+    margin: 20px auto 0;
     border-radius: var(--radius-md);
     border: none;
     font-size: 1rem;
@@ -266,7 +266,7 @@ h2 {
 
 /* === CHARACTER CONTAINER === */
 .character-container {
-    padding: 8px 0;
+    padding: 8px 0 0;
 }
 .character-list {
     display: flex;
@@ -473,7 +473,7 @@ h2 {
 .return {
     display: block;
     width: fit-content;
-    margin: 28px auto;
+    margin: 20px auto 0;
     padding: 12px 30px;
     background: linear-gradient(135deg, var(--accent-blue-dark), var(--accent-blue));
     color: white;

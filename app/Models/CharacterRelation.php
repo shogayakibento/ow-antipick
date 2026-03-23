@@ -11,4 +11,8 @@ class CharacterRelation extends Model
     public function character(){
         return $this->belongsTo(Character::class);
     }
+
+    public function toHero(){
+        return $this->belongsTo(Character::class, 'to_hero_id');
+    }
 }

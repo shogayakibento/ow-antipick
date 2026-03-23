@@ -1,7 +1,7 @@
 @extends('layouts.app_en') @section('title','Hero & Role Select | OW Anti-Pick Checker')
 @section('description','Choose your role and select the enemy team heroes. Up to 5 heroes can be selected. Instantly find counter picks for Overwatch.')
 @section('content')
-<div style="padding: 0 4px; padding-bottom: 80px;">
+<div style="padding: 0 4px; padding-bottom: 8px;">
 
     <!-- Role selection -->
     <div style="
@@ -82,7 +82,7 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'タンク')
-                        <div class="character-card char-tank" data-name="{{ $character->name_en }}">
+                        <div class="character-card char-tank" data-name="{{ $character->name_en }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name_en}}" />
                             <p>{{ $character->name_en }}</p>
                         </div>
@@ -99,7 +99,7 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'ダメージ')
-                        <div class="character-card char-damage" data-name="{{ $character->name_en }}">
+                        <div class="character-card char-damage" data-name="{{ $character->name_en }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name_en}}">
                             <p>{{ $character->name_en }}</p>
                         </div>
@@ -112,11 +112,11 @@
         <div class="support" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
             💚 Support
         </div>
-        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
+        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px;">
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'サポート')
-                        <div class="character-card char-support" data-name="{{ $character->name_en }}">
+                        <div class="character-card char-support" data-name="{{ $character->name_en }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name_en}}">
                             <p>{{ $character->name_en }}</p>
                         </div>
@@ -130,7 +130,7 @@
         @csrf
         <input type="hidden" name="role" id="selected-role" value=''>
         <input type="hidden" name="character[]" id="selected-character" value=''>
-        <div style="text-align: center; padding: 8px 0 16px;">
+        <div style="text-align: center; padding: 4px 0 0;">
             <button id='submit' type='submit' disabled style="opacity: 0.4; cursor: not-allowed;">
                 <i class="bi bi-search" style="margin-right: 6px;"></i>Find Counter Picks
             </button>

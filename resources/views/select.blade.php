@@ -1,7 +1,7 @@
 @extends('layouts.app') @section('title','キャラ・ロール選択 | OW アンチピックチェッカー')
 @section('description','あなたのロールと敵チームのキャラクターを選択してください。最大5人まで選べます。オーバーウォッチのカウンターキャラをすぐに確認できます。')
 @section('content')
-<div style="padding: 0 4px; padding-bottom: 80px;">
+<div style="padding: 0 4px; padding-bottom: 8px;">
 
     <!-- ロール選択 -->
     <div style="
@@ -82,7 +82,7 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'タンク')
-                        <div class="character-card char-tank" data-name="{{ $character->name }}">
+                        <div class="character-card char-tank" data-name="{{ $character->name }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name}}" />
                             <p>{{ $character->name }}</p>
                         </div>
@@ -99,7 +99,7 @@
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'ダメージ')
-                        <div class="character-card char-damage" data-name="{{ $character->name }}">
+                        <div class="character-card char-damage" data-name="{{ $character->name }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name}}">
                             <p>{{ $character->name }}</p>
                         </div>
@@ -112,11 +112,11 @@
         <div class="support" style="border-radius: 8px 8px 0 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem;">
             💚 サポート
         </div>
-        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px; margin-bottom: 16px;">
+        <div style="background: #1e2535; border: 1px solid #2a3348; border-top: none; border-radius: 0 0 8px 8px;">
             <div class='character-list'>
                 @foreach($characters as $character)
                     @if($character->role == 'サポート')
-                        <div class="character-card char-support" data-name="{{ $character->name }}">
+                        <div class="character-card char-support" data-name="{{ $character->name }}" style="position: relative;">
                             <img src="{{$character->image_url}}" alt="{{$character->name}}">
                             <p>{{ $character->name }}</p>
                         </div>
@@ -131,7 +131,7 @@
         <input type="hidden" name="role" id="selected-role" value=''>
         <input type="hidden" name="character[]" id="selected-character" value=''>
         {{-- 通常の送信ボタン（スクロール位置に依存しないフォールバック） --}}
-        <div style="text-align: center; padding: 8px 0 16px;">
+        <div style="text-align: center; padding: 4px 0 0;">
             <button id='submit' type='submit' disabled style="opacity: 0.4; cursor: not-allowed;">
                 <i class="bi bi-search" style="margin-right: 6px;"></i>最適アンチピックを表示
             </button>
