@@ -248,7 +248,7 @@ h2 {
     align-items: center;
     gap: 8px;
     text-align: center;
-    margin: 4px auto;
+    margin: 16px auto 4px;
     border-radius: var(--radius-md);
     border: none;
     font-size: 1rem;
