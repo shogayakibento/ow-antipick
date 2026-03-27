@@ -17,6 +17,7 @@
         <!-- OGP -->
         <meta property="og:title" content="@yield('title', 'OW Anti-Pick Checker')">
         <meta property="og:description" content="@yield('description', 'Just pick the enemy heroes to get optimal counter picks for Overwatch!')">
+        <meta property="og:site_name" content="OW Anti-Pick Checker">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:image" content="{{asset('imgs/logo.png')}}">

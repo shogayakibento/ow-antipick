@@ -16,6 +16,7 @@
         <!-- OGP -->
         <meta property="og:title" content="@yield('title', 'OW アンチピックチェッカー')">
         <meta property="og:description" content="@yield('description', '敵チームのキャラを選ぶだけで最適なカウンターキャラを提案！オーバーウォッチのランク・カジュアル対戦で活用できます。')">
+        <meta property="og:site_name" content="OW アンチピックチェッカー">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:image" content="{{asset('imgs/logo.png')}}">
