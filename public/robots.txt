@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://owstrategy.com/sitemap.xml
+Sitemap: https://www.owstrategy.com/sitemap.xml
