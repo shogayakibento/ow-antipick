@@ -6,8 +6,12 @@
         <meta name="description" content="@yield('description', 'オーバーウォッチの敵チームを選択するだけで、相性データをもとに最適なカウンターキャラを提案するツールです。')">
         <link rel="canonical" href="{{ url()->current() }}">
         <!-- hreflang -->
+        @php
+            $currentPath = request()->path();
+            $enUrl = url('/en' . ($currentPath ? '/' . $currentPath : ''));
+        @endphp
         <link rel="alternate" hreflang="ja" href="{{ url()->current() }}">
-        <link rel="alternate" hreflang="en" href="{{ url('/en') }}">
+        <link rel="alternate" hreflang="en" href="{{ $enUrl }}">
         <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
         <!-- OGP -->
         <meta property="og:title" content="@yield('title', 'OW アンチピックチェッカー')">

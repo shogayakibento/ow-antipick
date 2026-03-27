@@ -6,8 +6,13 @@
         <meta name="description" content="@yield('description', 'Select the enemy team in Overwatch to get the best counter picks based on matchup data.')">
         <link rel="canonical" href="{{ url()->current() }}">
         <!-- hreflang -->
+        @php
+            $currentPath = request()->path();
+            $jaPath = preg_replace('#^en/?#', '', $currentPath);
+            $jaUrl = url('/' . $jaPath);
+        @endphp
         <link rel="alternate" hreflang="en" href="{{ url()->current() }}">
-        <link rel="alternate" hreflang="ja" href="{{ url('/') }}">
+        <link rel="alternate" hreflang="ja" href="{{ $jaUrl }}">
         <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
         <!-- OGP -->
         <meta property="og:title" content="@yield('title', 'OW Anti-Pick Checker')">
